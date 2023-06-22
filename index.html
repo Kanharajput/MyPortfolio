@@ -10,5 +10,86 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <!-- navbar -->
+    <nav class="nav" id="nav">
+      <section class="nav-center">
+        <!-- nav-header -->
+        <div class="nav-header">
+          <!-- logo -->
+          <a href="index.html"><img src="images/my-logo.png"  class="nav-logo" alt="logo"></a>
+          <!-- menu button -->
+          <button class="nav-btn" id="nav-btn">
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul class="header-nav-links">
+            <li class="header-nav-links-item">
+              <a href="index.html">home</a>
+            </li>
+            <li class="header-nav-links-item">
+              <a href="about.html">about</a>
+            </li>
+            <li class="header-nav-links-item">
+              <a href="projects.html">projects</a>
+            </li>
+            <li class="header-nav-links-item">
+              <a href="contact.html">contact</a>
+            </li>
+          </ul>
+        </div>
+        <!-- it will be hidden after 768px  -->
+        <article class="small-screen-menu" id="navbar">
+          <!-- close icon -->
+          <div class="close-icon-parent" id="nav-close">
+            <span class="close-icon"><i class="fas fa-times"></i> </span>
+          </div>
+          <!-- nav-links -->
+          <ul class="small-nav-links">
+            <li class="small-nav-links-item">
+              <a href="index.html">home</a>
+            </li>
+            <li class="small-nav-links-item">
+              <a href="about.html">about</a>
+            </li>
+            <li class="small-nav-links-item">
+              <a href="projects.html">projects</a>
+            </li>
+            <li class="small-nav-links-item">
+              <a href="contact.html">contact</a>
+            </li>
+          </ul>
+          <!-- social connectin section -->
+          <ul class="social-links">
+            <li class="social-links-item">
+              <a href="facebook.com">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li class="social-links-item">
+              <a href="facebook.com">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="social-links-item">
+              <a href="contact.html">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </li>
+            <li class="social-links-item">
+              <a href="https://www.linkedin.com/in/kanha-tomar-703232216/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li class="social-links-item">
+              <a href="https://github.com/kanharajput" target="_blank">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </li>
+          </ul>
+        </article>
+      </section>
+    </nav>
+    <!-- end of navbar -->
+    <!-- js files -->
+    <script src="nav-func.js"></script>
   </body>
 </html>
