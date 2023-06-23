@@ -177,12 +177,17 @@ End of Global styles
 Navbar styles
 =====================
 */
+.nav-container{
+  background: var(--clr-white);
+}
 
 .nav-header{
-  background: var(--clr-white);
+  width:100vw;
+  max-width: 1170px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  padding:0 1rem;
+  padding:0.5rem 1rem;
 }
 
 .nav-logo{
@@ -197,7 +202,6 @@ Navbar styles
   cursor: pointer;
 }
 
-
 .close-icon{
   display: block;
   color: red;
@@ -207,7 +211,7 @@ Navbar styles
   font-weight: 700;
 }
 
-/* this will display after 768px */
+/* this will be display after 768px */
 .header-nav-links{
   display:none;
 }
@@ -268,4 +272,35 @@ Navbar styles
 
 .social-links-item:hover a{
   color: var(--clr-primary-5);
+}
+
+@media screen and (min-width: 768px){
+  .nav-btn{
+    display: none;
+  }
+
+  .small-screen-menu{
+    display: none;
+  }
+  
+  .nav-container{
+    background: var(--clr-primary-10);
+  }
+
+  .header-nav-links{
+    display:flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-around;
+  }
+ 
+  .header-nav-links-item a{
+    color: var(--clr-primary-1);
+    text-transform: capitalize;
+    letter-spacing: 0.2rem;
+  }
+
+  .header-nav-links-item:hover a{
+    color: var(--clr-primary-5);
+  }
 }
