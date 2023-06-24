@@ -370,6 +370,10 @@ Banner styles
   margin-top: 3rem;
 }
 
+.banner-img{
+  display: none;
+}
+
 @media screen and (min-width: 768px){
   /* font-size increases of the items so increase the container size*/
   .banner-data{
@@ -377,4 +381,36 @@ Banner styles
   }
 }
 
+@media screen and (min-width: 992px){
+  .col-2-layout{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+  }
+
+  .banner-img{
+    width: 50%;
+    display: inherit;
+    justify-self: center;
+    align-self: center;
+    position: relative;
+    z-index:0;
+  }
+
+  .banner-img img{
+    border-radius: var(--radius);
+  }
+  
+  /* draw line to the right and bottom of the image */
+  .banner-img::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    border: 0.25rem solid var(--clr-primary-5);
+    border-radius: var(--radius);
+    top: 2rem;
+    right: -2rem;
+    z-index: -1;
+  } 
+}
 
