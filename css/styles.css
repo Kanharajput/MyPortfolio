@@ -382,17 +382,18 @@ Banner styles
 }
 
 @media screen and (min-width: 992px){
-  .col-2-layout{
+  .col-2-layout-banner{
     display: grid;
     grid-template-columns:1fr 1fr;
   }
 
   .banner-img{
-    width: 50%;
+    width: 55%;
     display: inherit;
     justify-self: center;
     align-self: center;
     position: relative;
+    box-shadow: var(--light-shadow);
     z-index:0;
   }
 
@@ -414,3 +415,45 @@ Banner styles
   } 
 }
 
+/* 
+=====================
+End of Banner styles
+=====================
+*/
+/* 
+=====================
+About styles
+=====================
+*/
+.about-section{
+  background: var(--clr-white);
+}
+
+.about-img-container{
+  width: 320px;
+  margin: 0 auto;
+}
+
+.about-img-container img{
+  border-radius: var(--radius);
+  box-shadow: var(--light-shadow);
+}
+
+.about-data{
+  margin-top: 2rem;
+}
+
+.about-data h2{
+  color:var(--clr-primary-1);
+}
+
+.about-underline{
+  width: 4rem;
+  height: 0.2rem;
+  background: var(--clr-primary-5);
+}
+
+.about-data p{
+  padding-top: 2rem;
+  color: var(--clr-gray-5);
+}
