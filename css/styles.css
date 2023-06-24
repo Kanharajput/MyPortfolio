@@ -178,7 +178,20 @@ Navbar styles
 =====================
 */
 .nav-container{
+  width: 100vw;
   background: var(--clr-white);
+}
+
+/* add this id to navbar container when screen slides 
+use id because navbar is class and it's also applying background so we need more specificity attribute to overide class property*/
+#navbar-fixed{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: var(--clr-white);
+  box-shadow: var(--light-shadow);
 }
 
 .nav-header{
@@ -316,7 +329,6 @@ Banner styles
 =====================
 */
 .banner{
-  /* total height of navbar is 70px(use inspect) */
   height: calc(100vh - 70px);
   background: var(--clr-primary-10);
 }
