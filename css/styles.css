@@ -502,6 +502,11 @@ About styles
 Styles for Services
 =================== 
 */
+/* 
+===================
+End of Services
+=================== 
+*/
 
 .services-section{
   background: var(--clr-gray-10);
@@ -573,4 +578,43 @@ Styles for Services
  .services-cards{
   grid-template-columns: repeat(3, 1fr);
  } 
+}
+
+/* 
+========================
+Styles for Latest works
+=======================
+*/
+
+.latest-works-section{
+  background: var(--clr-white);
+}
+
+.latest-works-text{
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.latest-works-text p{
+  max-width: 600px;
+  color: var(--clr-gray-5);
+  margin: 0 auto;
+}
+
+.latest-works-underline{
+  width: 6rem;
+  height: 0.2rem;
+  background: var(--clr-primary-5);
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.latest-project{
+  margin-bottom: 2rem;
+}
+
+.latest-project img{
+  border-radius: var(--radius);
+  height: 16rem;
+  object-fit: cover;
 }
