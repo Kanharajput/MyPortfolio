@@ -512,7 +512,7 @@ End of Services
   background: var(--clr-gray-10);
 }
 
-.services-title h1{
+.services-title h2{
   text-align: center;
   color: var(--clr-primary-1);
 }
