@@ -544,7 +544,6 @@ Styles for Services
   background: var(--clr-primary-5);
   margin: 0 auto;
   margin-bottom: 1.5rem;
-
 }
 
 .service-icon{
@@ -560,4 +559,18 @@ Styles for Services
 }
 .service-card-content:hover .service-name-underline{
   background: var(--clr-white);
+}
+
+@media screen and (min-width: 768px){
+ .services-cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+ } 
+}
+
+@media screen and (min-width: 992px){
+ .services-cards{
+  grid-template-columns: repeat(3, 1fr);
+ } 
 }
