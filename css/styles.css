@@ -611,12 +611,55 @@ Styles for Latest works
 
 .latest-project{
   margin-bottom: 2rem;
+  background: var(--clr-primary-5);
+  border-radius: var(--radius);
+  transition: var(--transition);
+  /* for project info */
+  position: relative;
+}
+
+/* this will come around project info when hover */
+.latest-project::before{
+  content:'';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border : 0.2rem solid var(--clr-white);
+  border-radius: var(--radius);
+  opacity: 0;
+  transition: var(--transition);
 }
 
 .latest-project img{
-  border-radius: var(--radius);
   height: 16rem; 
+  border-radius: var(--radius);
   object-fit: cover;
+  transition: var(--transition);
+}
+
+.project-info{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: var(--clr-white);
+  text-align: center;
+  opacity: 0;
+  transition: var(--transition);
+}
+
+/* all below code is for hovering action over latest-project */
+.latest-project:hover img{
+  opacity: 0.3;
+}
+
+.latest-project:hover .project-info{
+  opacity: 1;
+}
+
+.latest-project:hover::before{
+  opacity: 1;
+  transform: scale(0.8);
 }
 
 @media screen and (min-width: 768px){
