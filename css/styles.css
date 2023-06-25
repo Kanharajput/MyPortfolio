@@ -615,6 +615,49 @@ Styles for Latest works
 
 .latest-project img{
   border-radius: var(--radius);
-  height: 16rem;
+  height: 16rem; 
   object-fit: cover;
+}
+
+@media screen and (min-width: 768px){
+  .latest-works-projects{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px){
+  .latest-works-projects{
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+
+@media screen and (min-width: 1170px){
+  .latest-works-projects{
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,16rem);
+    grid-template-areas:
+    "a b b"
+    "a c d"
+    ;
+  }
+
+  .project-2{
+    grid-area: a;
+  }
+  .project-1{
+    grid-area: b;
+  }
+  .project-3{
+    grid-area: c;
+  }
+  .project-4{
+    grid-area: d;
+  }
+
+  .latest-project img{
+    height: 100%;
+  }
+
 }
