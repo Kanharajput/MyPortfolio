@@ -496,3 +496,68 @@ About styles
     z-index: -1;
   }
 }
+
+/* 
+===================
+Styles for Services
+=================== 
+*/
+
+.services-section{
+  background: var(--clr-gray-10);
+}
+
+.services-title h1{
+  text-align: center;
+  color: var(--clr-primary-1);
+}
+
+.services-underline{
+  width: 6rem;
+  height: 0.2rem;
+  background: var(--clr-primary-5);
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
+.service-card{
+  background: var(--clr-white);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  color: var(--clr-gray-1);
+  border-radius: var(--radius);
+  transition: var(--transition);
+}
+
+.service-card:hover{
+  background: var(--clr-primary-5);
+  color: var(--clr-white);
+}
+
+.service-card-content{
+  text-align: center;
+}
+
+.service-name-underline{
+  width: 4rem;
+  height: 0.1rem;
+  background: var(--clr-primary-5);
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+
+}
+
+.service-icon{
+  font-size: 2rem;
+}
+
+.service-card-content p{
+  color: var(--clr-gray-5);
+}
+
+.service-card-content:hover p{
+  color: var(--clr-white);
+}
+.service-card-content:hover .service-name-underline{
+  background: var(--clr-white);
+}
