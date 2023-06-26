@@ -783,7 +783,8 @@ Skills
 */
 
 .skills-section{
-  background: var(--clr-primary-10);
+  /* not 10 because it make white color invisible */
+  background: var(--clr-primary-9);
 }
 
 .skill-title{
@@ -798,6 +799,8 @@ Skills
   text-transform: uppercase;
   font-weight: 500;
   color: var(--clr-primary-2);
+  font-size: 0.875rem;
+  letter-spacing: 0.05rem;
 }
 
 .skill-value-container{
@@ -830,6 +833,7 @@ Skills
   position: absolute;
   top: -2.6rem;
   transform: translate(-50%);
+  font-weight: 300;
 }
 
 .left-70{
@@ -838,4 +842,13 @@ Skills
 
 .left-80{
   left: 80%;
+}
+
+/* after 768px create 2 column layout */
+@media screen and (min-width: 768px){
+  .skills{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 2rem;
+  }
 }
