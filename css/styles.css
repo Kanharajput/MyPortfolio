@@ -745,10 +745,16 @@ it only has one element that is video-ban */
   align-content: center;
 }
 
+.connect-section{
+clip-path: polygon(50% 0%, 100% 16%, 100% 86%, 47% 100%, 0 86%, 0 16%);
+}
+
 .video-ban{
   background: var(--clr-primary-10);
   text-align: center;
   z-index: 1;
+  /*  clip path for shapes. Don't use frequently as it is not supported by many browsers */
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
 }
 
 .video-ban-txt{
