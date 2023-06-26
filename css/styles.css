@@ -160,6 +160,14 @@ p {
   max-width: 1170px;
 }
 
+.underline{
+  width: 4rem;
+  height: 0.2rem;
+  background: var(--clr-primary-5);
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
 @media screen and (min-width: 992px) {
   .section-center {
     width: 95vw;
@@ -460,9 +468,7 @@ About styles
 }
 
 .about-underline{
-  width: 4rem;
-  height: 0.2rem;
-  background: var(--clr-primary-5);
+  margin: 0;
 }
 
 .about-data p{
@@ -519,9 +525,6 @@ End of Services
 
 .services-underline{
   width: 6rem;
-  height: 0.2rem;
-  background: var(--clr-primary-5);
-  margin: 0 auto;
   margin-bottom: 4rem;
 }
 
@@ -544,10 +547,7 @@ End of Services
 }
 
 .service-name-underline{
-  width: 4rem;
   height: 0.1rem;
-  background: var(--clr-primary-5);
-  margin: 0 auto;
   margin-bottom: 1.5rem;
 }
 
@@ -603,10 +603,6 @@ Styles for Latest works
 
 .latest-works-underline{
   width: 6rem;
-  height: 0.2rem;
-  background: var(--clr-primary-5);
-  margin: 0 auto;
-  margin-bottom: 1rem;
 }
 
 .latest-project{
@@ -761,10 +757,6 @@ it only has one element that is video-ban */
 
 .video-ban-txt-title-underline{
   width: 6rem;
-  height: 0.2rem;
-  background: var(--clr-primary-5);
-  margin: 0 auto;
-  margin-bottom: 2rem;
 }
 
 /* it control the width of whole video-ban */
