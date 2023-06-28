@@ -852,3 +852,49 @@ Skills
     column-gap: 2rem;
   }
 }
+/* 
+===============
+End of Skills 
+===============
+*/
+
+.footer{
+  height: 13rem;
+  background: #222;
+
+  /* center the footer-center block */
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+}
+
+.footer-social-links{
+  width: 16rem;
+  /* align horizontally */
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.footer-icon{
+  font-size: 1.5rem;
+  color: var(--clr-white);
+  transition: var(--transition);
+}
+
+.footer-social-links-item:hover .footer-icon{
+  color: var(--clr-primary-5);
+  transform: scale(1.2);
+}
+
+.copyright-section p{
+  color: var(--clr-white);
+  font-size: 1rem;
+  text-transform: capitalize;
+  letter-spacing: 0.2rem;
+}
+
+.copyright-section p a{
+  color: var(--clr-primary-8);
+}
