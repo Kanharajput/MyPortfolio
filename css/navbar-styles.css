@@ -1,0 +1,145 @@
+.nav-container{
+  width: 100vw;
+  background: var(--clr-white);
+}
+
+/* add this id to navbar container when screen slides 
+use id because navbar is class and it's also applying background so we need more specificity attribute to overide class property*/
+#navbar-fixed{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: var(--clr-white);
+  box-shadow: var(--light-shadow);
+}
+
+.nav-header{
+  width:100vw;
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding:0.5rem 1rem;
+}
+
+.nav-logo{
+  width: 250px;
+}
+
+.nav-btn{
+  font-size: 2rem;
+  color: var(--clr-primary-5);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.close-icon{
+  display: block;
+  color: red;
+  text-align: end;
+  margin-right: 1rem;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+/* this will be display after 768px */
+.header-nav-links{
+  display:none;
+}
+
+.small-screen-menu{
+  background: var(--clr-gray-10);
+  /* get the whole screen for menu */
+  position: fixed;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 0.5fr 1fr 0.7fr;
+  /* hide it */
+  transform: translateX(-100%);
+  transition: var(--transition);
+}
+
+/* to display small screen menu */
+.showNav{
+  transform: translate(0);
+}
+
+.small-nav-links{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.small-nav-links-item{
+  padding: 1rem;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.small-nav-links-item a{
+  color: var(--clr-gray-5);
+  transition: var(--transition);
+}
+
+
+.small-nav-links-item:hover a{
+  color: var(--clr-primary-5);
+}
+
+.social-links{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+}
+
+.social-links-item a{
+  font-size: 1.5rem;
+  color: var(--clr-gray-1);
+  transition: var(--transition);
+}
+
+.social-links-item:hover a{
+  color: var(--clr-primary-5);
+}
+
+@media screen and (min-width: 768px){
+  .nav-btn{
+    display: none;
+  }
+  
+  .small-screen-menu{
+    display: none;
+  }
+  
+  .nav-container{
+    background: var(--clr-primary-10);
+  }
+  
+  .header-nav-links{
+    display:flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .header-nav-links-item a{
+    color: var(--clr-primary-1);
+    text-transform: capitalize;
+    letter-spacing: 0.2rem;
+  }
+
+  .header-nav-links-item:hover a{
+    color: var(--clr-primary-5);
+  }
+}
+/* 
+=====================
+End of Navbar styles
+=====================
+*/
