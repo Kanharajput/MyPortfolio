@@ -154,6 +154,7 @@ About styles
 
   .about-data{
     margin: 0;
+    align-self: center;
   }
 
   .about-img-container{
