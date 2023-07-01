@@ -388,7 +388,6 @@ Styles for connect works
   position: relative;
   padding: 10rem 0 5rem 0;
   margin: 5rem 0;
-  z-index: -2; 
 }
 
 /* html video element is used to set video as a background */
@@ -399,7 +398,7 @@ Styles for connect works
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: -1;
+  z-index: -2;
 }
 
 .connect-section::after{
@@ -411,6 +410,7 @@ Styles for connect works
   height: 100%;
   background: var(--clr-white);
   opacity: 0.6;
+  z-index: -1;
 }
 
 /* video is background so logically 
@@ -428,6 +428,7 @@ it only has one element that is video-ban */
 .video-ban{
   background: var(--clr-primary-10);
   text-align: center;
+  /* it will be above all */
   z-index: 1;
   /*  clip path for shapes. Don't use frequently as it is not supported by many browsers */
   clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
