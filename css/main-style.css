@@ -314,9 +314,15 @@ Styles for Latest works
   transition: var(--transition);
 }
 
+/* project-1 bottom is not look nice as it matches with background color 
+so draw bottom border to separate image from background */
+.project-1{
+  border-bottom:2px solid #6305dd;
+}
+
 /* all below code is for hovering action over latest-project */
 .latest-project:hover img{
-  opacity: 0.3;
+  opacity: 0.25;
 }
 
 .latest-project:hover .project-info{
