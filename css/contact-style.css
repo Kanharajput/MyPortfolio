@@ -1,2 +1,89 @@
 @import url("global-styles.css");
 @import url("navbar-styles.css");
+
+.contact{
+    background: var(--clr-primary-10);
+}
+
+.contact-title{
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    color: var(--clr-primary-1);
+}
+
+.map{
+    border: 2px solid var(--clr-primary-5);   
+}
+
+.form{
+    background: var(--clr-white);
+    margin-top: 3rem;
+    padding: 2rem 0;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.form-group{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.form-group .form-field{
+    width: 100%;
+    background: var(--clr-gray-10);
+    color: var(--clr-primary-2);   text-transform: uppercase;
+    padding:10px;
+    margin-bottom: 1rem; 
+    border-radius: 5px;
+    letter-spacing: var(--spacing);
+    box-shadow: var(--dark-shadow);
+    border:none;
+}   
+
+/* by default button is an inline-block elment in some browser */
+.frm-btn{
+    display: inline-block;
+    width: 100%;
+    padding:15px;
+    background: var(--clr-gray-10);
+    color: var(--clr-primary-1);
+    font-size:0.9rem;
+    margin-top:2rem;
+    border-radius:10px;
+    letter-spacing: var(--spacing);
+    text-transform: uppercase;
+    box-shadow: var(--dark-shadow);
+    transition: var(--transition);
+    border: none;
+    animation: border-move 4s linear infinite;
+}
+
+.frm-btn:hover{
+    background: var(--clr-primary-9);
+    color: var(--clr-primary-1);
+    animation:none;
+}
+
+
+@keyframes border-move{
+    0%{
+        border-left: none;
+        border-top: 2px solid var(--clr-primary-5);
+    }
+    25%{
+        border-top: none;
+        border-right: 2px solid var(--clr-primary-5);
+    }
+    50%{
+        border-right: none;
+        border-bottom: 2px solid var(--clr-primary-5);
+    }
+    100%{
+        border-bottom: none;
+        border-left: 2px solid var(--clr-primary-5);
+    }
+}
+
