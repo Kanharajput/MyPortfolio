@@ -63,6 +63,7 @@ use id because navbar is class and it's also applying background so we need more
   /* hide it */
   transform: translateX(-100%);
   transition: var(--transition);
+  z-index: 5;
 }
 
 /* to display small screen menu */

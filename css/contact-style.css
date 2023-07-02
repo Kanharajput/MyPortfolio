@@ -15,6 +15,54 @@
 
 .map{
     border: 2px solid var(--clr-primary-5);  
+    /* to set email and telephone over map */
+    position: relative;
+}
+
+/* to not remain the tiny space at the bottom of the map block */
+.map iframe{
+    display: block; 
+}
+
+/* white color overlay */
+.map::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--clr-white);
+    z-index: 1;
+    opacity: 0.6;
+}
+
+.info-container{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 1;
+    z-index: 2;
+}
+
+.info .icon{
+    color: var(--clr-primary-5);
+    font-size: 1.5rem;
+}
+
+.info h4{
+    color: var(--clr-primary-4);
+    text-transform: uppercase;
+}
+
+.info p{
+    color: var(--clr-primary-1);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 700;
+    /* font-style: italic; */
+    letter-spacing: 0.1rem;
 }
 
 .form{
@@ -96,12 +144,14 @@
 @media screen and (min-width: 992px){
     .section-center{
         width: 80vw;
+        /* this pedding needed because navbar will fixed only when user slide more than 80 check nav-func.js. To slide we need some space below. */
+        padding-bottom: 5rem;
     }
 
     .contact-content{
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        column-gap: 2rem;
+        column-gap: 4rem;
         align-items: center;
         padding-bottom: 2rem;
     }
