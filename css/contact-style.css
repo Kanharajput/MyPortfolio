@@ -3,31 +3,37 @@
 
 .contact{
     background: var(--clr-primary-10);
+    padding-bottom: 3rem;
 }
 
 .contact-title{
     text-align: center;
     padding-top: 3rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     color: var(--clr-primary-1);
 }
 
 .map{
-    border: 2px solid var(--clr-primary-5);   
+    border: 2px solid var(--clr-primary-5);  
 }
 
 .form{
     background: var(--clr-white);
     margin-top: 3rem;
     padding: 2rem 0;
-    display: flex; 
-    flex-direction: column;
-    align-items: center;
+    border-radius: var(--radius);
 }
 
+.form-title{
+    text-align: center;
+}
+
+.form-title-underline{
+    width: 6rem;
+}
 
 .form-group{
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -87,3 +93,24 @@
     }
 }
 
+@media screen and (min-width: 992px){
+    .section-center{
+        width: 80vw;
+    }
+
+    .contact-content{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 2rem;
+        align-items: center;
+        padding-bottom: 2rem;
+    }
+
+    .form{
+        margin-top: 0;
+    }
+
+    .contact-title{
+        padding-top: 1rem 0;
+    }
+}
