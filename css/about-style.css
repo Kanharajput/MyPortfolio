@@ -1,2 +1,18 @@
 @import url("global-styles.css");
 @import url("navbar-styles.css");
+
+.about-section{
+    background: var(--clr-white);
+}
+
+.section-center{
+    padding: 3rem 0;
+}
+
+.section-title{
+    text-align: center;
+}
+
+.bottom-info{
+    font-family: var(--ff-secondary);
+}
